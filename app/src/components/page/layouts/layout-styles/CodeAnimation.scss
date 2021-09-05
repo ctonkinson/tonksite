@@ -1,0 +1,194 @@
+.code_animation {
+	display: flex;
+	@media only screen and (min-width: 780px) {
+		height: 100vh;
+	}
+	.code-bg {
+		position: relative;
+		height: 300px;
+		border-radius: 20px;
+		margin: auto;
+		opacity: 0;
+		animation: FadeInUpFour 1s;
+        animation-fill-mode: forwards; 
+        animation-delay: 2s;
+        width: 100vw;
+		transform: scale(0.7);
+		margin-top: -90px;
+		margin-right: -18%;
+		@media only screen and (min-width: 650px) {
+			margin-right: 0;
+			margin-top: 0;
+		}
+        @media only screen and (min-width: 780px) {
+        	height: 100%;
+        	transform: scale(1);
+			margin-top: auto;
+			margin-right: auto;
+        }
+        @media only screen and (min-width: 780px) {
+        	background: #333d58;
+        	height: 50vh;
+        	width: 43vw;
+        }
+        @media only screen and (min-width: 991px) {
+        	width: 400px;
+    		margin-left: 14vh;
+        }
+	}
+	.code-editor {
+		position: absolute;
+		background: #1d1e22;
+		border-radius: 10px;
+		box-shadow: 0 4px 20px rgba(0,0,0,.5);
+		opacity: 0;
+		.code-1 {
+			color: #79C0F2;
+		}
+		.code-2 {
+			color: #eaa0a2;
+		}
+		.code-3 {
+			color: #fff;
+		}
+		.code-4 {
+			color: #a6cfcd;
+		}
+		.code-5 {
+			color: #0ebeff;
+		}
+		.indent-1 {
+			padding-left: 15px;
+		}
+		.indent-2 {
+			padding-left: 30px;
+		}
+		.code-editor-main {
+			padding: 5px 10px 10px 10px;
+			text-align: left;
+			font-size: 11px;
+		}
+		.code-editor-header {
+			position: relative;
+			padding: 10px;
+			text-align: left;
+			color: #fff;
+			font-family: 'texta';
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			span {
+				padding: 0 10px;
+			}
+			svg {
+				path {
+					fill: #4c4f5a;
+				}
+			}
+			#chevron-down {
+				position: absolute;
+				right: 15px;
+				top: 15px;
+			}
+		}
+		&#ce-one {
+			top: -70px;
+			right: 40%;
+			width: 300px;
+			height: 140px;
+			animation: FadeInUpOne 1s;
+            animation-fill-mode: forwards; 
+            animation-delay: 2.5s;
+            @media only screen and (min-width: 780px) {
+            	right: 20px;
+            }
+		}
+		&#ce-two {
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			right: 10%;
+			width: 300px;
+			height: 140px;
+			animation: FadeInUpTwo 1s;
+            animation-fill-mode: forwards; 
+            animation-delay: 3.2s;
+            @media only screen and (min-width: 780px) {
+            	right: -30px;
+            }
+		}
+		&#ce-three {
+			bottom: -70px;
+			right: 40%;
+			width: 300px;
+			height: 140px;
+			animation: FadeInUpThree 1s;
+            animation-fill-mode: forwards; 
+            animation-delay: 3.9s;
+            @media only screen and (min-width: 780px) {
+            	right: 20px;
+            }
+		}
+	}
+}
+
+.flashing-cursor {
+	height: 15px;
+    width: 1px;
+    background: #fff;
+    display: inline-block;
+    margin-bottom: -3px;
+    margin-left: 5px;
+    animation: 1s blink step-end infinite;
+}
+@keyframes blink {
+  from, to {
+    background: transparent;
+  }
+  50% {
+    background: #fff;
+  }
+}
+
+@keyframes FadeInUpOne {
+    from {
+        opacity: 0;
+        top: -30px;
+    }
+    to {
+        opacity: 1;
+        top: -70px;
+    }
+}
+
+@keyframes FadeInUpTwo {
+    from {
+        opacity: 0;
+        top: 40px;
+    }
+    to {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+@keyframes FadeInUpThree {
+    from {
+        opacity: 0;
+        bottom: -110px;
+    }
+    to {
+        opacity: 1;
+        bottom: -70px;
+    }
+}
+
+@keyframes FadeInUpFour {
+    from {
+        opacity: 0;
+        top: 40px;
+    }
+    to {
+        opacity: 1;
+        top: 0;
+    }
+}

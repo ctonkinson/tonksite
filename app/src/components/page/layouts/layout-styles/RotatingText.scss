@@ -1,0 +1,41 @@
+.rotating_text {
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    @media only screen and (min-width: 780px) {
+        margin-top: 0;
+        height: 100vh;
+    }
+    h1 {
+        min-height: auto;
+        font-family: 'texta';
+        letter-spacing: 1.5px;
+        font-size: 30px;
+        @media only screen and (min-width: 780px) {
+            font-size: 70px;
+        }
+    }
+    .word-background {
+        transform: rotate(-15deg) scale(2.5);
+        position: absolute;
+        opacity: 0.08;
+        font-family: 'Isabel';
+        letter-spacing: 0.5px;
+        animation: MoveUpDown 20s linear infinite;
+        top: 0;
+    }
+}
+
+
+@keyframes MoveUpDown {
+    0%, 100% {
+        top: 0;
+    }
+    50% {
+        top: 100px;
+    }
+}

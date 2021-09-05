@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Isabel';
+  font-style: normal;
+  src: url("/fonts/isabel-light-webfont.woff2") format("woff2"),
+       url("/fonts/isabel-light-webfont.woff") format("woff");
+}
+
+
+/* latin-ext */
+@font-face {
+  font-family: 'Texta';
+  font-style: normal;
+  src: url("/fonts/texta-book-webfont.woff2") format("woff2"),
+       url("/fonts/texta-book-webfont.woff") format("woff");
+}
+
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+

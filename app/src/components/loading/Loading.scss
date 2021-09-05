@@ -1,0 +1,132 @@
+.loading-layout {
+	background-color: #333d58;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #eaa0a2;
+    position: fixed;
+    right: 100%;
+    top: 0;
+    width: calc(100%);
+    font-family: Isabel;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+	-webkit-animation: slideIn 2s; /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: slideIn 2s; /* Firefox < 16 */
+	-ms-animation: slideIn 2s; /* Internet Explorer */
+	-o-animation: slideIn 2s; /* Opera < 12.1 */
+	animation: slideIn 2s;
+	animation-fill-mode: forwards;
+    z-index: 999;
+}
+.loading-content {
+	width: 100%;
+}
+.logo-content {
+    img {
+        margin: 0 auto;
+        max-width: 35px;
+    }
+    div {
+        font-family: 'texta';
+        letter-spacing: 1.5px;
+        font-size: 12px;
+    }
+}
+.loading-bar {
+	width: 350px;
+    max-width: 70%;
+    display: block;
+    margin: 0 auto;
+    height: 2px;
+    background: #aeaeae;
+    margin-top: 10px;
+    position: relative;
+    &:after {
+    	content: '';
+    	display: block;
+    	width: 0;
+    	position: absolute;
+    	left: 0;
+    	top: 0;
+    	background: #eaa0a2;
+    	height: 2px;
+    	-webkit-animation: loading 0.5s;
+		-moz-animation: loading 0.5s;
+		-ms-animation: loading 0.5s;
+		-o-animation: loading 0.5s;
+		animation: loading 0.5s;
+		animation-delay: 0.3s;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes loading {
+    from { width: 0; }
+    to   { width: 100%; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes loading {
+    from { width: 0; }
+    to   { width: 100%; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes loading {
+    from { width: 0; }
+    to   { width: 100%; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes loading {
+    from { width: 0; }
+    to   { width: 100%; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes loading {
+    from { width: 0; }
+    to   { width: 100%; }
+}
+
+@keyframes slideIn {
+    0% { right: 100%; }
+    25%   { right: 0%; }
+    50%   { right: 0%; }
+    100%   { right: -100%; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes slideIn {
+    0% { right: 100%; }
+    25%   { right: 0%; }
+    50%   { right: 0%; }
+    100%   { right: -100%; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes slideIn {
+    0% { right: 100%; }
+    25%   { right: 0%; }
+    50%   { right: 0%; }
+    100%   { right: -100%; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes slideIn {
+    0% { right: 100%; }
+    25%   { right: 0%; }
+    50%   { right: 0%; }
+    100%   { right: -100%; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes slideIn {
+    0% { right: 100%; }
+    25%   { right: 0%; }
+    50%   { right: 0%; }
+    100%   { right: -100%; }
+}

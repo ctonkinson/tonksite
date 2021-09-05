@@ -1,0 +1,70 @@
+.pin {
+  width: 38px;
+  height: 48px;
+  border-radius: 50% 50% 50% 0;
+  position: absolute;
+  /*transform: rotate(-45deg);*/
+  left: 50%;
+  top: 50%;
+  margin: -20px 0 0 -20px;
+  background-size: contain;
+}
+
+
+.bounce {
+  animation-name: bounce;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-delay: 2.5s;
+}
+
+.pulse {
+  background: #fff;
+  border-radius: 50%;
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: 22px 0px 0px -8px;
+  transform: rotateX(55deg);
+  z-index: -2;
+  opacity: 0.6;
+}
+
+
+@keyframes pulsate {
+  0% {
+    transform: scale(0.1, 0.1);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1.2, 1.2);
+    opacity: 0;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    opacity: 0;
+    transform: translateY(-2000px);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+
+  80% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}

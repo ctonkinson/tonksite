@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4e013849.chunk.css",
+    "main.js": "/static/js/main.8e1a7d31.chunk.js",
+    "main.js.map": "/static/js/main.8e1a7d31.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.f8c5b4be.js",
+    "runtime-main.js.map": "/static/js/runtime-main.f8c5b4be.js.map",
+    "static/js/2.2084bf08.chunk.js": "/static/js/2.2084bf08.chunk.js",
+    "static/js/2.2084bf08.chunk.js.map": "/static/js/2.2084bf08.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.255fc1317de7be98fc986949e715f752.js": "/precache-manifest.255fc1317de7be98fc986949e715f752.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.4e013849.chunk.css.map": "/static/css/main.4e013849.chunk.css.map",
+    "static/js/2.2084bf08.chunk.js.LICENSE.txt": "/static/js/2.2084bf08.chunk.js.LICENSE.txt",
+    "static/media/balloon.svg": "/static/media/balloon.681405f2.svg",
+    "static/media/cloud-1.svg": "/static/media/cloud-1.c1d55124.svg",
+    "static/media/cloud-2.svg": "/static/media/cloud-2.225d21b8.svg",
+    "static/media/cloud-3.svg": "/static/media/cloud-3.f9b8f886.svg",
+    "static/media/earth.svg": "/static/media/earth.24ed3a00.svg",
+    "static/media/hele.svg": "/static/media/hele.889fcd30.svg",
+    "static/media/logo.png": "/static/media/logo.7f0e0918.png",
+    "static/media/marker.png": "/static/media/marker.fc0da1af.png",
+    "static/media/places.svg": "/static/media/places.f739fd8d.svg",
+    "static/media/props.svg": "/static/media/props.c50b05c6.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f8c5b4be.js",
+    "static/js/2.2084bf08.chunk.js",
+    "static/css/main.4e013849.chunk.css",
+    "static/js/main.8e1a7d31.chunk.js"
+  ]
+}
